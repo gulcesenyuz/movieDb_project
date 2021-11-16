@@ -34,7 +34,7 @@ public class SearchScreenFragment extends Fragment {
     private final String TEST = "TEST";
 
 
-    private  FragmentSearchScreenBinding binding;
+    private FragmentSearchScreenBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,16 +47,11 @@ public class SearchScreenFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Log.d(TAG,"onClick: "+ binding.etSearch.getText().toString());
-            }
-        });
-        binding.btnTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("TEST"," onClicked btn" );
                 GetRetrofitResponse();
+
             }
         });
-        return view;
+            return view;
     }
 
     private void GetRetrofitResponse() {
@@ -66,7 +61,7 @@ public class SearchScreenFragment extends Fragment {
         Call<MovieSearchResponse> responseCall= movieApi
                 .searchMovie(
                         Credentials.API_KEY,
-                        "Jack Reacher",
+                        binding.etSearch.getText().toString(),
                         "1"
                 );
         Log.d("TEST", String.valueOf(responseCall.request()));

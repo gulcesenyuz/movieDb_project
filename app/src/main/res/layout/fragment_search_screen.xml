@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/et_search"
-        android:layout_width="155dp"
-        android:layout_height="46dp"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:ems="10"
@@ -23,7 +23,7 @@
         android:id="@+id/btn_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="45dp"
         android:text="@string/search_btn"
         app:layout_constraintBottom_toBottomOf="@+id/et_search"
         app:layout_constraintStart_toEndOf="@+id/et_search"
@@ -40,15 +40,5 @@
         app:layout_constraintTop_toBottomOf="@+id/et_search"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />
-
-    <Button
-        android:id="@+id/btn_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_search"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
