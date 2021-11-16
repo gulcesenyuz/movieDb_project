@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="search_screen">Hello Search screen</string>
+    <string name="detail_screen">Hello detail screen</string>
+    <string name="toast_welcome">Welcome to Search Movie App</string>
+    <string name="movie_name">movie name</string>
+    <string name="search_btn">Search</string>
+</resources>
