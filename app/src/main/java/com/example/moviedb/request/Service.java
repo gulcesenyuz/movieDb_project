@@ -18,6 +18,9 @@ public class Service {
     private static MovieApi movieApi=retrofit.create(MovieApi.class);
     public static MovieApi getMovieApi(){
         Log.d("TEST","getMovieApi Sevice");
+        Log.d("TEST",movieApi.toString());
+
         return movieApi;
     }
+
 }
