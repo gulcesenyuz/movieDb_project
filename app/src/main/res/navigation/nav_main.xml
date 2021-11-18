@@ -6,7 +6,7 @@
     app:startDestination="@id/searchScreenFragment">
     <fragment
         android:id="@+id/searchScreenFragment"
-        android:name="com.example.moviedb.views.SearchScreenFragment"
+        android:name="com.example.moviedb.views.mainScreen.SearchScreenFragment"
         android:label="fragment_search_screen"
         tools:layout="@layout/fragment_search_screen" >
 
